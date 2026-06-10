@@ -104,8 +104,8 @@ StreamHub provides users with a premium streaming-platform experience by allowin
 
 Frontend Developer | React Enthusiast
 
-GitHub: https://github.com/YOUR_USERNAME
-LinkedIn: Add your LinkedIn profile here
+GitHub: https://github.com/cherry5231
+
 
 ---
 
