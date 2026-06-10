@@ -1,0 +1,460 @@
+.netflix{
+    background:black;
+    color:white;
+    min-height:100vh;
+}
+
+.netflix-navbar{
+    position:fixed;
+    top:0;
+    width:100%;
+    padding:20px 50px;
+    z-index:100;
+    background:rgba(0,0,0,0.6);
+    backdrop-filter:blur(10px);
+}
+
+.netflix-navbar h1{
+    color:#e50914;
+    font-size:2rem;
+}
+
+.netflix-hero{
+    height:100vh;
+
+    background:
+    linear-gradient(
+      rgba(0,0,0,.3),
+      rgba(0,0,0,.9)
+    ),
+    url("https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?w=1600");
+
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    align-items:center;
+}
+
+.hero-overlay{
+    max-width:700px;
+    margin-left:60px;
+}
+
+.hero-overlay h1{
+    font-size:5rem;
+    margin-bottom:20px;
+}
+
+.hero-overlay p{
+    font-size:1.2rem;
+    line-height:1.7;
+    margin-bottom:25px;
+}
+
+.hero-buttons{
+    display:flex;
+    gap:15px;
+}
+
+.play-btn{
+    background:white;
+    color:black;
+    border:none;
+    padding:14px 35px;
+    border-radius:6px;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+.info-btn{
+    background:rgba(255,255,255,.3);
+    color:white;
+    border:none;
+    padding:14px 35px;
+    border-radius:6px;
+    cursor:pointer;
+}
+
+.row-title{
+    margin:25px;
+    font-size:1.7rem;
+}
+
+.movie-row{
+    display:flex;
+    overflow-x:auto;
+    gap:20px;
+    padding:20px;
+}
+
+.movie-row::-webkit-scrollbar{
+    display:none;
+}
+
+.movie-card{
+    min-width:240px;
+    transition:.4s;
+    cursor:pointer;
+}
+
+.movie-card img{
+    width:100%;
+    height:340px;
+    object-fit:cover;
+    border-radius:12px;
+}
+
+.movie-card:hover{
+    transform:scale(1.1);
+}
+
+.movie-card h3{
+    margin-top:10px;
+}
+
+@media(max-width:768px){
+
+    .hero-overlay{
+        margin-left:20px;
+    }
+
+    .hero-overlay h1{
+        font-size:2.5rem;
+    }
+
+    .movie-card{
+        min-width:180px;
+    }
+
+}
+.prime{
+    background:#06131f;
+    color:white;
+    min-height:100vh;
+}
+
+.prime-navbar{
+    position:fixed;
+    top:0;
+    width:100%;
+    z-index:100;
+
+    padding:20px 50px;
+
+    background:rgba(6,19,31,.8);
+
+    backdrop-filter:blur(12px);
+}
+
+.prime-navbar h1{
+    color:#00a8e1;
+    font-size:2rem;
+    font-weight:600;
+}
+
+.prime-hero{
+    height:100vh;
+
+    background:
+    linear-gradient(
+      rgba(0,0,0,.4),
+      rgba(6,19,31,.95)
+    ),
+    url("https://images.unsplash.com/photo-1478720568477-152d9b164e26?w=1600");
+
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    align-items:center;
+}
+
+.prime-overlay{
+    margin-left:60px;
+    max-width:700px;
+}
+
+.prime-overlay h1{
+    font-size:4.5rem;
+    margin-bottom:20px;
+}
+
+.prime-overlay p{
+    font-size:1.2rem;
+    line-height:1.7;
+    margin-bottom:30px;
+}
+
+.prime-buttons{
+    display:flex;
+    gap:15px;
+}
+
+.watch-btn{
+    background:#00a8e1;
+    color:white;
+    border:none;
+
+    padding:15px 35px;
+    border-radius:8px;
+
+    cursor:pointer;
+    font-weight:bold;
+}
+
+.membership-btn{
+    background:rgba(255,255,255,.2);
+
+    color:white;
+    border:none;
+
+    padding:15px 35px;
+    border-radius:8px;
+
+    cursor:pointer;
+}
+
+.prime-title{
+    margin:30px;
+    font-size:1.8rem;
+}
+
+.prime-row{
+    display:flex;
+    overflow-x:auto;
+    gap:20px;
+    padding:20px;
+}
+
+.prime-row::-webkit-scrollbar{
+    display:none;
+}
+
+.prime-card{
+    min-width:260px;
+    cursor:pointer;
+    transition:.4s;
+}
+
+.prime-card img{
+    width:100%;
+    height:350px;
+    object-fit:cover;
+
+    border-radius:12px;
+}
+
+.prime-card:hover{
+    transform:scale(1.08);
+}
+
+.prime-card h3{
+    margin-top:10px;
+}
+
+@media(max-width:768px){
+
+    .prime-overlay{
+        margin-left:20px;
+    }
+
+    .prime-overlay h1{
+        font-size:2.5rem;
+    }
+
+    .prime-card{
+        min-width:180px;
+    }
+
+}
+.home-page{
+
+    min-height:100vh;
+
+    background:
+    linear-gradient(
+        rgba(0,0,0,.75),
+        rgba(0,0,0,.85)
+    ),
+    url("https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?w=1800");
+
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    color:white;
+}
+
+.home-overlay{
+    text-align:center;
+    width:100%;
+}
+
+.home-title{
+
+    font-size:6rem;
+    font-weight:900;
+
+    letter-spacing:4px;
+
+    margin-bottom:20px;
+
+    text-shadow:
+    0 0 15px rgba(255,255,255,.3);
+}
+
+.home-subtitle{
+
+    font-size:1.4rem;
+
+    margin-bottom:60px;
+
+    opacity:.9;
+}
+
+.platforms{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:40px;
+
+    flex-wrap:wrap;
+}
+
+.platform-card{
+
+    width:380px;
+    height:450px;
+
+    border-radius:25px;
+
+    overflow:hidden;
+
+    cursor:pointer;
+
+    position:relative;
+
+    transition:.5s;
+
+    box-shadow:
+    0 15px 35px rgba(0,0,0,.5);
+}
+
+.platform-card:hover{
+
+    transform:
+    translateY(-15px)
+    scale(1.03);
+}
+
+.netflix-home{
+
+    background:
+    linear-gradient(
+      rgba(0,0,0,.35),
+      rgba(0,0,0,.8)
+    ),
+    url("https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c?w=800");
+
+    background-size:cover;
+    background-position:center;
+}
+
+.prime-home{
+
+    background:
+    linear-gradient(
+      rgba(0,0,0,.35),
+      rgba(0,0,0,.8)
+    ),
+    url("https://images.unsplash.com/photo-1478720568477-152d9b164e26?w=800");
+
+    background-size:cover;
+    background-position:center;
+}
+
+.platform-content{
+
+    position:absolute;
+
+    bottom:40px;
+
+    left:30px;
+
+    right:30px;
+}
+
+.platform-content h2{
+
+    font-size:3rem;
+
+    margin-bottom:15px;
+}
+
+.platform-content p{
+
+    font-size:1rem;
+
+    margin-bottom:20px;
+
+    line-height:1.6;
+}
+
+.platform-content button{
+
+    padding:14px 28px;
+
+    border:none;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    font-size:1rem;
+
+    font-weight:bold;
+}
+
+.netflix-home button{
+
+    background:#e50914;
+
+    color:white;
+}
+
+.prime-home button{
+
+    background:#00a8e1;
+
+    color:white;
+}
+
+@media(max-width:768px){
+
+    .home-title{
+
+        font-size:3rem;
+    }
+
+    .home-subtitle{
+
+        font-size:1rem;
+    }
+
+    .platform-card{
+
+        width:300px;
+        height:380px;
+    }
+
+    .platform-content h2{
+
+        font-size:2rem;
+    }
+}
